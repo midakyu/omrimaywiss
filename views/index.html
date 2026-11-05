@@ -1,39 +1,33 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Example</title>
+<head>
+    <title>Protein Calculator</title>
     <meta charset="utf-8" />
     <script src="/client.js" defer></script>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>
-        A list of users
-      </h1>
+        <h1>Daily Protein Calculator</h1>
     </header>
     <main>
-      <h3>Add a new user:</h3>
-      <form>
-        <label>First Name:</label>
-        <input id="firstName" type="text" placeholder="Lionel" /> <br /><br />
-        <label>Surname:</label>
-        <input id="surName" type="text" placeholder="Messi" /> <br /><br />
+        <h3>Calculate your daily protein intake:</h3>
+        <form>
+            <label>Gender:</label>
+            <input id="Gender" type="text" placeholder="Male/Female" /><br /><br />
+            
+            <label>Weight (kg):</label>
+            <input id="Weight" type="number" placeholder="67" /><br /><br />
+            
+            <label>Height (cm):</label>
+            <input id="Height" type="number" placeholder="180" /><br /><br />
 
-        <!-- REALLY IMPORTANT to get this to work!! -->
-        <!-- Error in the sample code from JE... missing id="submit-btn" HOK -->
-        <button id="submit-btn" type="submit">Submit</button>
+            <button id="submit-btn" type="submit">Calculate & Save</button>
+        </form>
 
-        <!-- found on w3school -->
-        <!--<button id="myBtn" type="button" value="Submit">Submit</button> -->
-      </form>
-      <!-- TUTORIAL D -->
-      <p>Users:</p>
-      <section>
-        <ul id="users"></ul>
-      </section>
+        <p>Saved Results:</p>
+        <section>
+            <ul id="users"></ul>
+        </section>
     </main>
-  </body>
+</body>
 </html>
